@@ -2,13 +2,15 @@ class App {
   constructor() {
     // We are using $form because it's an HTML element
     this.$form = document.querySelector('#form');
+    this.$noteTitle = document.querySelector('#note-title');
+    this.$formButtons = document.querySelector('#form-buttons')
 
     this.addEventListeners();
   }
 
   addEventListeners() {
     document.body.addEventListener('click', event => {
-      handleFormClick(event);
+      this.handleFormClick(event);
     });
   }
 
@@ -23,7 +25,9 @@ class App {
   }
 
   openForm() {
-
+    this.$form.classList.add('form-open');
+    this.$noteTitle.style.display = 'block';
+    this.$formButtons.style.display = 'block';
   }
 }
 
