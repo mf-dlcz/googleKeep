@@ -20,7 +20,9 @@ This is a clone of Google Keep
 - Live demo: [Google Keep]()
 
 ## Technologies Used
-
+  HTML
+  CSS
+  JavaScript
 
 
 ## How to Use
