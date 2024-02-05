@@ -6,7 +6,7 @@ class App {
     this.$form = document.querySelector('#form');
     this.$noteTitle = document.querySelector('#note-title');
     this.$noteText = document.querySelector('#note-text');
-    this.$formButtons = document.querySelector('#form-buttons')
+    this.$formButtons = document.querySelector('#form-buttons');
 
     this.addEventListeners();
   }
@@ -58,6 +58,7 @@ class App {
       id: this.notes.length > 0 ? this.notes[this.notes.length - 1].id + 1 : 1
     };
     this.notes = [...this.notes, newNote];
+    console.log(this.notes)
   }
 }
 
