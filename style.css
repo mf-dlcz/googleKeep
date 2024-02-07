@@ -379,14 +379,22 @@ input:focus {
   background: white;
 }
 
-#purple {
-  background: #d7aefb;
+#peach {
+  background: #692B17;
 }
 
-#orange {
-  background: #fbbc04;
+#sage {
+  background: #0C625D;
 }
 
-#teal {
-  background: #a7ffeb;
+#storm {
+  background: #284255;
+}
+
+#clay {
+  background: #4B443A;
+}
+
+#chalk {
+  background: #232427;
 }
