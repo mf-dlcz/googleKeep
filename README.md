@@ -8,6 +8,7 @@
   - [Demo](#demo)
   - [Technologies Used](#technologies-used)
   - [How to Use](#how-to-use)
+  - [Check List](#check-list)
 
 ## Project Overview
 
@@ -50,3 +51,8 @@ npm start
 ```
 
 This command will launch a development server, and you'll be able to view the website locally in your web browser.
+
+## Check List
+  * header includes a search bar
+  * Pin Notes
+  * Add checklist option
