@@ -26,3 +26,27 @@ This is a clone of Google Keep
 
 
 ## How to Use
+
+1. **Clone the repository**:
+
+First, you'll need to clone this repository to your local machine. Open your terminal and run the following command:
+
+```git
+git clone https://github.com/mf-dlcz/googleKeep.git
+```
+
+2. **Install Dependencies**:
+
+To install all the projects dependencies run in the terminal the following command:
+
+```git
+ npm install
+```
+
+3. **Run the project**:
+
+```git
+npm start
+```
+
+This command will launch a development server, and you'll be able to view the website locally in your web browser.
