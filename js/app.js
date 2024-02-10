@@ -142,7 +142,7 @@ class App {
       id: this.notes.length > 0 ? this.notes[this.notes.length - 1].id + 1 : 1
     };
     this.notes = [...this.notes, newNote];
-    this.displayNotes();
+    this.render();
     this.closeForm();
   }
 
@@ -153,14 +153,14 @@ class App {
     this.notes = this.notes.map(note =>
       note.id === Number(this.id) ? { ...note, title, text } : note
     );
-    this.displayNotes();
+    this.render();
   }
 
   editNoteColor(color) {
     this.note = this.notes.map(note =>
       note.id === Number(this.id) ? { ...note, color } : note
     );
-    this.displayNotes();
+    this.render();
   }
 
   selectNote(event) {
@@ -177,7 +177,16 @@ class App {
     if (!event.target.matches('.toolbar-delete')) return;
     const id = event.target.dataset.id;
     this.notes = this.notes.filter(note => note.id !== Number(id));
+    this.render();
+  }
+
+  render() {
+    this.saveNotes();
     this.displayNotes();
+  }
+
+  saveNotes() {
+    localStorage.setItem('notes', JSON.stringify(this.notes))
   }
 
   displayNotes() {
