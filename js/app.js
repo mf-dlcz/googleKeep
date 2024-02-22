@@ -1,3 +1,5 @@
+import {} from
+
 class App {
   constructor() {
     this.notes = JSON.parse(localStorage.getItem('notes')) || [];
